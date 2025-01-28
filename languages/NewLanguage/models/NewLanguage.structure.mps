@@ -28,6 +28,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -57,6 +58,7 @@
       <property role="IQ2ns" value="3205856104552172684" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="elemRender" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2LXvih8QoMl" resolve="IElementRender" />
     </node>
     <node concept="1TJgyj" id="2LXvih8QoMd" role="1TKVEi">
@@ -72,11 +74,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="2LXvih8QoMg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="2LXvih8QoMh" role="1TKVEl">
-      <property role="IQ2nx" value="3205856104552172689" />
-      <property role="TrG5h" value="url" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="2LXvih8QoMi" role="1TKVEl">
       <property role="IQ2nx" value="3205856104552172690" />
@@ -101,6 +98,7 @@
       <property role="IQ2ns" value="3205856104552172742" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="endPointList" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2LXvih8QoN8" resolve="REndPoint" />
     </node>
   </node>
@@ -175,6 +173,7 @@
   <node concept="1TIwiD" id="2LXvih8QoNt">
     <property role="EcuMT" value="3205856104552172765" />
     <property role="TrG5h" value="RInvetarDLS" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="2LXvih8QoNu" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -210,6 +209,7 @@
       <property role="IQ2ns" value="3205856104552172775" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="api" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2LXvih8QoN4" resolve="RApi" />
     </node>
     <node concept="1TJgyj" id="2LXvih8QoNC" role="1TKVEi">
@@ -223,6 +223,7 @@
       <property role="IQ2ns" value="3205856104552172777" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="renders" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2LXvih8QoMb" resolve="ComponentRender" />
     </node>
   </node>
@@ -244,7 +245,11 @@
       <property role="IQ2ns" value="3139195613265611536" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cols" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2LXvih8QoNq" resolve="TextRender" />
+    </node>
+    <node concept="PrWs8" id="5Qd3UBLc64J" role="PzmwI">
+      <ref role="PrY4T" node="2LXvih8QoMl" resolve="IElementRender" />
     </node>
   </node>
   <node concept="1TIwiD" id="2IgEssLakGi">
@@ -256,11 +261,13 @@
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="2IgEssLakGo" role="1TKVEi">
-      <property role="IQ2ns" value="3139195613265611544" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="action" />
-      <ref role="20lvS9" node="2IgEssLakGp" resolve="Action" />
+    <node concept="1TJgyi" id="5Qd3UBLbQLu" role="1TKVEl">
+      <property role="IQ2nx" value="6741061439813807198" />
+      <property role="TrG5h" value="action" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5Qd3UBLbBu0" role="PzmwI">
+      <ref role="PrY4T" node="2LXvih8QoMl" resolve="IElementRender" />
     </node>
   </node>
   <node concept="1TIwiD" id="2IgEssLakGp">

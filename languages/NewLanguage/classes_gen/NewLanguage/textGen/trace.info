@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="65,0,68,0" name="NewLanguage.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="69,0,72,0" name="NewLanguage.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="18,0,73,0" name="NewLanguage.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d18c0f44-b3dc-4898-9ee8-8962a555e6b1(NewLanguage.textGen)/6741061439813074472">
+    <file name="ComponentRender_TextGen.java">
+      <node id="6741061439813074472" at="15,54,16,55" concept="5" />
+      <node id="6741061439813074525" at="17,98,18,27" concept="1" />
+      <node id="6741061439813074472" at="23,0,24,0" concept="8" trace="elemRender$PWNp" />
+      <node id="6741061439813074525" at="16,55,19,5" concept="2" />
+      <node id="6741061439813074472" at="14,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6741061439813074525" at="17,98,18,27" />
+      <scope id="6741061439813074525" at="16,55,19,5">
+        <var name="item" id="6741061439813074525" />
+      </scope>
+      <scope id="6741061439813074472" at="15,54,19,5">
+        <var name="tgs" id="6741061439813074472" />
+      </scope>
+      <scope id="6741061439813074472" at="14,0,21,0">
+        <var name="ctx" id="6741061439813074472" />
+      </scope>
+      <unit id="6741061439813074472" at="22,0,25,0" name="NewLanguage.textGen.ComponentRender_TextGen$LINKS" />
+      <unit id="6741061439813074472" at="13,0,26,0" name="NewLanguage.textGen.ComponentRender_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="6741061439813074472" at="30,49,31,45" concept="6" />
+      <scope id="6741061439813074472" at="30,49,31,45" />
+    </file>
+  </root>
+  <root nodeRef="r:d18c0f44-b3dc-4898-9ee8-8962a555e6b1(NewLanguage.textGen)/6741061439813121587">
+    <file name="RComponent_TextGen.java">
+      <node id="6741061439813121587" at="22,54,23,55" concept="5" />
+      <node id="6741061439813121686" at="23,55,24,0" concept="7" />
+      <node id="6741061439813127076" at="24,0,25,49" concept="1" />
+      <node id="6741061439813138697" at="25,49,26,18" concept="1" />
+      <node id="6741061439813127378" at="26,18,27,18" concept="1" />
+      <node id="6741061439813138776" at="27,18,28,28" concept="1" />
+      <node id="6741061439813138898" at="28,28,29,86" concept="1" />
+      <node id="6741061439813140465" at="29,86,30,23" concept="1" />
+      <node id="6741061439813140952" at="30,23,31,18" concept="1" />
+      <node id="6741061439813121587" at="31,18,32,44" concept="1" />
+      <node id="6741061439813141503" at="32,44,33,17" concept="1" />
+      <node id="6741061439813141581" at="33,17,34,27" concept="1" />
+      <node id="6741061439813141703" at="34,27,35,18" concept="1" />
+      <node id="6741061439813121587" at="35,18,36,44" concept="1" />
+      <node id="6741061439814859902" at="36,44,37,17" concept="1" />
+      <node id="6741061439813141806" at="37,17,38,24" concept="1" />
+      <node id="6741061439813141905" at="38,24,39,18" concept="1" />
+      <node id="6741061439813121587" at="39,18,40,44" concept="1" />
+      <node id="6741061439813221305" at="42,185,43,31" concept="1" />
+      <node id="6741061439813121587" at="45,5,46,44" concept="1" />
+      <node id="6741061439813225236" at="46,44,47,17" concept="1" />
+      <node id="6741061439813232983" at="47,17,48,25" concept="1" />
+      <node id="6741061439813233151" at="48,25,49,18" concept="1" />
+      <node id="6741061439813121587" at="49,18,50,44" concept="1" />
+      <node id="6741061439813236939" at="50,44,51,17" concept="1" />
+      <node id="6741061439813248088" at="51,17,52,20" concept="1" />
+      <node id="6741061439813248187" at="52,20,53,18" concept="1" />
+      <node id="6741061439813121587" at="53,18,54,44" concept="1" />
+      <node id="6741061439813255694" at="54,44,55,20" concept="1" />
+      <node id="6741061439813255770" at="55,20,56,18" concept="1" />
+      <node id="6741061439813263277" at="56,18,57,34" concept="1" />
+      <node id="6741061439813263422" at="57,34,58,86" concept="1" />
+      <node id="6741061439813265358" at="58,86,59,20" concept="1" />
+      <node id="6741061439813265750" at="59,20,60,18" concept="1" />
+      <node id="6741061439813121587" at="64,0,65,0" concept="8" trace="name$MnvL" />
+      <node id="6741061439813121587" at="68,0,69,0" concept="8" trace="cName$PX2q" />
+      <node id="6741061439813121587" at="69,0,70,0" concept="8" trace="renders$Tuxp" />
+      <node id="6741061439813121587" at="73,0,74,0" concept="8" trace="RInvetarDLS$fY" />
+      <node id="6741061439813197344" at="41,195,44,7" concept="3" />
+      <node id="6741061439813142077" at="40,44,45,5" concept="2" />
+      <node id="6741061439813121587" at="21,0,62,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6741061439813197346" at="42,185,43,31" />
+      <scope id="6741061439813142080" at="41,195,44,7" />
+      <scope id="6741061439813142077" at="40,44,45,5">
+        <var name="render" id="6741061439813142078" />
+      </scope>
+      <scope id="6741061439813121587" at="22,54,60,18">
+        <var name="tgs" id="6741061439813121587" />
+      </scope>
+      <scope id="6741061439813121587" at="21,0,62,0">
+        <var name="ctx" id="6741061439813121587" />
+      </scope>
+      <unit id="6741061439813121587" at="63,0,66,0" name="NewLanguage.textGen.RComponent_TextGen$PROPS" />
+      <unit id="6741061439813121587" at="72,0,75,0" name="NewLanguage.textGen.RComponent_TextGen$CONCEPTS" />
+      <unit id="6741061439813121587" at="67,0,71,0" name="NewLanguage.textGen.RComponent_TextGen$LINKS" />
+      <unit id="6741061439813121587" at="20,0,76,0" name="NewLanguage.textGen.RComponent_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="6741061439813121587" at="32,44,33,40" concept="6" />
+      <scope id="6741061439813121587" at="32,44,33,40" />
+    </file>
+  </root>
+  <root nodeRef="r:d18c0f44-b3dc-4898-9ee8-8962a555e6b1(NewLanguage.textGen)/6741061439813135201">
+    <file name="TextGenAspectDescriptor.java">
+      <node id="6741061439813135201" at="38,44,39,40" concept="6" />
+      <scope id="6741061439813135201" at="38,44,39,40" />
+    </file>
+    <file name="TextRender_TextGen.java">
+      <node id="6741061439813135201" at="14,54,15,55" concept="5" />
+      <node id="6741061439813135228" at="15,55,16,17" concept="1" />
+      <node id="6741061439813135720" at="16,17,17,22" concept="1" />
+      <node id="6741061439813135796" at="17,22,18,86" concept="1" />
+      <node id="6741061439813137859" at="18,86,19,23" concept="1" />
+      <node id="6741061439813138295" at="19,23,20,18" concept="1" />
+      <node id="6741061439813135201" at="24,0,25,0" concept="8" trace="text$Tmxq" />
+      <node id="6741061439813135201" at="13,0,22,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6741061439813135201" at="14,54,20,18">
+        <var name="tgs" id="6741061439813135201" />
+      </scope>
+      <scope id="6741061439813135201" at="13,0,22,0">
+        <var name="ctx" id="6741061439813135201" />
+      </scope>
+      <unit id="6741061439813135201" at="23,0,26,0" name="NewLanguage.textGen.TextRender_TextGen$PROPS" />
+      <unit id="6741061439813135201" at="12,0,27,0" name="NewLanguage.textGen.TextRender_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:d18c0f44-b3dc-4898-9ee8-8962a555e6b1(NewLanguage.textGen)/6741061439813267239">
+    <file name="RInvetarDLS_TextGen.java">
+      <node id="6741061439813267239" at="15,54,16,55" concept="5" />
+      <node id="6741061439813267239" at="16,55,17,44" concept="1" />
+      <node id="6741061439813616277" at="18,104,19,27" concept="1" />
+      <node id="6741061439813267239" at="20,5,21,44" concept="1" />
+      <node id="6741061439813267239" at="25,0,26,0" concept="8" trace="listOfComponents$Tt_l" />
+      <node id="6741061439813616277" at="17,44,20,5" concept="2" />
+      <node id="6741061439813267239" at="14,0,23,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6741061439813616277" at="18,104,19,27" />
+      <scope id="6741061439813616277" at="17,44,20,5">
+        <var name="item" id="6741061439813616277" />
+      </scope>
+      <scope id="6741061439813267239" at="15,54,21,44">
+        <var name="tgs" id="6741061439813267239" />
+      </scope>
+      <scope id="6741061439813267239" at="14,0,23,0">
+        <var name="ctx" id="6741061439813267239" />
+      </scope>
+      <unit id="6741061439813267239" at="24,0,27,0" name="NewLanguage.textGen.RInvetarDLS_TextGen$LINKS" />
+      <unit id="6741061439813267239" at="13,0,28,0" name="NewLanguage.textGen.RInvetarDLS_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="6741061439813267239" at="34,45,35,41" concept="6" />
+      <node id="6741061439813267239" at="47,62,48,53" concept="5" />
+      <node id="6741061439813267239" at="48,53,49,56" concept="5" />
+      <node id="6741061439813267239" at="49,56,50,111" concept="1" />
+      <node id="6741061439813267239" at="50,111,51,17" concept="0" />
+      <node id="6741061439813388497" at="55,61,56,68" concept="6" />
+      <node id="6741061439813409105" at="58,66,59,16" concept="6" />
+      <node id="6741061439813403639" at="61,57,62,22" concept="6" />
+      <node id="6741061439813267239" at="55,0,58,0" concept="9" trace="getFileName_RInvetarDLS#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6741061439813267239" at="58,0,61,0" concept="9" trace="getFileExtension_RInvetarDLS#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6741061439813267239" at="61,0,64,0" concept="9" trace="getPath_RInvetarDLS#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6741061439813267239" at="46,58,52,7" concept="3" />
+      <scope id="6741061439813267239" at="34,45,35,41" />
+      <scope id="6741061439813267239" at="55,61,56,68" />
+      <scope id="6741061439813267239" at="58,66,59,16" />
+      <scope id="6741061439813267239" at="61,57,62,22" />
+      <scope id="6741061439813267239" at="55,0,58,0">
+        <var name="node" id="6741061439813267239" />
+      </scope>
+      <scope id="6741061439813267239" at="58,0,61,0">
+        <var name="node" id="6741061439813267239" />
+      </scope>
+      <scope id="6741061439813267239" at="61,0,64,0">
+        <var name="node" id="6741061439813267239" />
+      </scope>
+      <scope id="6741061439813267239" at="47,62,51,17">
+        <var name="ext" id="6741061439813267239" />
+        <var name="fname" id="6741061439813267239" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:d18c0f44-b3dc-4898-9ee8-8962a555e6b1(NewLanguage.textGen)/6741061439814064883">
+    <file name="RowRender_TextGen.java">
+      <node id="6741061439814064883" at="18,54,19,55" concept="5" />
+      <node id="6741061439814695476" at="19,55,20,17" concept="1" />
+      <node id="6741061439814414439" at="20,17,21,24" concept="1" />
+      <node id="6741061439814520905" at="21,24,22,18" concept="1" />
+      <node id="6741061439814414760" at="22,18,23,0" concept="7" />
+      <node id="6741061439814515566" at="24,124,25,19" concept="1" />
+      <node id="6741061439814771146" at="25,19,26,19" concept="1" />
+      <node id="6741061439814515644" at="26,19,27,26" concept="1" />
+      <node id="6741061439814515743" at="27,26,28,80" concept="1" />
+      <node id="6741061439814518131" at="28,80,29,26" concept="1" />
+      <node id="6741061439814518311" at="29,26,30,20" concept="1" />
+      <node id="6741061439814771173" at="31,5,32,17" concept="1" />
+      <node id="6741061439814521768" at="32,17,33,25" concept="1" />
+      <node id="6741061439814521959" at="33,25,34,18" concept="1" />
+      <node id="6741061439814064883" at="38,0,39,0" concept="8" trace="text$Tmxq" />
+      <node id="6741061439814064883" at="42,0,43,0" concept="8" trace="cols$VDGU" />
+      <node id="6741061439814414786" at="23,0,31,5" concept="2" />
+      <node id="6741061439814064883" at="17,0,36,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6741061439814414792" at="24,124,30,20" />
+      <scope id="6741061439814414786" at="23,0,31,5">
+        <var name="colTextRender" id="6741061439814414788" />
+      </scope>
+      <scope id="6741061439814064883" at="18,54,34,18">
+        <var name="tgs" id="6741061439814064883" />
+      </scope>
+      <scope id="6741061439814064883" at="17,0,36,0">
+        <var name="ctx" id="6741061439814064883" />
+      </scope>
+      <unit id="6741061439814064883" at="37,0,40,0" name="NewLanguage.textGen.RowRender_TextGen$PROPS" />
+      <unit id="6741061439814064883" at="41,0,44,0" name="NewLanguage.textGen.RowRender_TextGen$LINKS" />
+      <unit id="6741061439814064883" at="16,0,45,0" name="NewLanguage.textGen.RowRender_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="6741061439814064883" at="36,43,37,39" concept="6" />
+      <scope id="6741061439814064883" at="36,43,37,39" />
+    </file>
+  </root>
+  <root nodeRef="r:d18c0f44-b3dc-4898-9ee8-8962a555e6b1(NewLanguage.textGen)/6741061439815221451">
+    <file name="ButtonRender_TextGen.java">
+      <node id="6741061439815221451" at="14,54,15,55" concept="5" />
+      <node id="6741061439815225558" at="15,55,16,17" concept="1" />
+      <node id="6741061439815225636" at="16,17,17,35" concept="1" />
+      <node id="6741061439815225781" at="17,35,18,88" concept="1" />
+      <node id="6741061439815234626" at="18,88,19,21" concept="1" />
+      <node id="6741061439815235018" at="19,21,20,86" concept="1" />
+      <node id="6741061439815227237" at="20,86,21,28" concept="1" />
+      <node id="6741061439815227836" at="21,28,22,18" concept="1" />
+      <node id="6741061439815221451" at="26,0,27,0" concept="8" trace="action$zFXK" />
+      <node id="6741061439815221451" at="27,0,28,0" concept="8" trace="text$VJAf" />
+      <node id="6741061439815221451" at="13,0,24,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6741061439815221451" at="14,54,22,18">
+        <var name="tgs" id="6741061439815221451" />
+      </scope>
+      <scope id="6741061439815221451" at="13,0,24,0">
+        <var name="ctx" id="6741061439815221451" />
+      </scope>
+      <unit id="6741061439815221451" at="25,0,29,0" name="NewLanguage.textGen.ButtonRender_TextGen$PROPS" />
+      <unit id="6741061439815221451" at="12,0,30,0" name="NewLanguage.textGen.ButtonRender_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="6741061439815221451" at="28,46,29,42" concept="6" />
+      <scope id="6741061439815221451" at="28,46,29,42" />
+    </file>
+  </root>
+</debug-info>
+
