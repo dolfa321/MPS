@@ -21,8 +21,9 @@ public class RComponent_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-
-    tgs.append("import React, {} from 'react';");
+    tgs.append("import React, {useEffect, useState} from 'react';");
+    tgs.newLine();
+    tgs.append("import axios from 'axios';");
     tgs.newLine();
     tgs.newLine();
     tgs.append("function ");
@@ -30,6 +31,24 @@ public class RComponent_TextGen extends TextGenDescriptorBase {
     tgs.append("() {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
+    tgs.append("const [data, setData] = useState([]);");
+    tgs.newLine();
+    tgs.newLine();
+
+    tgs.append("useEffect(() => { ");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.append("const fetchData = async () => {");
+    tgs.newLine();
+    tgs.append("const response = await axios.get('https://localhost:3000/gear/expired'); \n setData(response.data) \n");
+    tgs.append("}; \n fetchData();");
+
+    ctx.getBuffer().area().decreaseIndent();
+
+    tgs.append("}, []);");
+    tgs.newLine();
+    tgs.newLine();
+
     tgs.indent();
     tgs.append("return (");
     tgs.newLine();
@@ -45,14 +64,30 @@ public class RComponent_TextGen extends TextGenDescriptorBase {
     }
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
-    tgs.append("</div>");
-    tgs.newLine();
+    for (SNode footer : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.roots(SNodeOperations.getModel(ctx.getPrimaryInput()), CONCEPTS.RInvetarDLS$fY), LINKS.show$Tuio))) {
+      if (SPropertyOperations.getBoolean(footer, PROPS.footer$TffV)) {
+        tgs.indent();
+        tgs.append("<footer");
+        tgs.newLine();
+        ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append("style={{ position: \"fixed\",\n bottom: 0, \n left: \"50%\", \n transform: \"translateX(-50%)\" \n, backgroundColor: \"#333\", \n color: \"white\", \n textAlign: \"center\", \n padding: \"10px\", \n width: \"100%\", \n }} \n > ");
+        tgs.newLine();
+        tgs.append("2025, Moj inventar. Vse pravice pridzane");
+        tgs.newLine();
+        tgs.append("</footer>");
+        ctx.getBuffer().area().decreaseIndent();
+      }
+    }
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
-    tgs.append(")");
+    tgs.append("</div>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append(");");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
-    tgs.append(")");
+    tgs.append("};");
     tgs.newLine();
     tgs.append("export default ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
@@ -62,11 +97,13 @@ public class RComponent_TextGen extends TextGenDescriptorBase {
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty footer$TffV = MetaAdapterFactory.getProperty(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cd0L, 0x2c7d7d2448d98cd3L, "footer");
   }
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink cName$PX2q = MetaAdapterFactory.getReferenceLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98c8bL, 0x2c7d7d2448d98c8dL, "cName");
     /*package*/ static final SContainmentLink renders$Tuxp = MetaAdapterFactory.getContainmentLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cddL, 0x2c7d7d2448d98ce9L, "renders");
+    /*package*/ static final SContainmentLink show$Tuio = MetaAdapterFactory.getContainmentLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cddL, 0x2c7d7d2448d98ce8L, "show");
   }
 
   private static final class CONCEPTS {

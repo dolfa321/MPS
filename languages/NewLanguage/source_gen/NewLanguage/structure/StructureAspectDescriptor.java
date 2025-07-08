@@ -26,6 +26,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptRInvetarDLS = createDescriptorForRInvetarDLS();
   /*package*/ final ConceptDescriptor myConceptRShow = createDescriptorForRShow();
   /*package*/ final ConceptDescriptor myConceptRowRender = createDescriptorForRowRender();
+  /*package*/ final ConceptDescriptor myConceptTableRender = createDescriptorForTableRender();
   /*package*/ final ConceptDescriptor myConceptTextRender = createDescriptorForTextRender();
   /*package*/ final EnumerationDescriptor myEnumerationActionType = new EnumerationDescriptor_ActionType();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -42,7 +43,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptButtonRender, myConceptComponentRender, myConceptIElementRender, myConceptRApi, myConceptRComponent, myConceptREndPoint, myConceptRInvetarDLS, myConceptRShow, myConceptRowRender, myConceptTextRender);
+    return Arrays.asList(myConceptAction, myConceptButtonRender, myConceptComponentRender, myConceptIElementRender, myConceptRApi, myConceptRComponent, myConceptREndPoint, myConceptRInvetarDLS, myConceptRShow, myConceptRowRender, myConceptTableRender, myConceptTextRender);
   }
 
   @Override
@@ -69,6 +70,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRShow;
       case LanguageConceptSwitch.RowRender:
         return myConceptRowRender;
+      case LanguageConceptSwitch.TableRender:
+        return myConceptTableRender;
       case LanguageConceptSwitch.TextRender:
         return myConceptTextRender;
       default:
@@ -183,9 +186,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98c95L);
     b.origin("r:6c2c3770-ac97-4d60-a1d3-21d527b39f73(NewLanguage.structure)/3139195613265611534");
     b.version(3);
-    b.property("clickable", 0x2b90a9c731294b0fL).type(PrimitiveTypeId.BOOLEAN).origin("3139195613265611535").done();
-    b.property("action", 0x2b90a9c731294b21L).type(MetaIdFactory.dataTypeId(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2b90a9c731294b1dL)).origin("3139195613265611553").done();
-    b.aggregate("cols", 0x2b90a9c731294b10L).target(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cdaL).optional(true).ordered(true).multiple(true).origin("3139195613265611536").done();
+    b.property("name", 0x2b90a9c731294b0fL).type(PrimitiveTypeId.STRING).origin("3139195613265611535").done();
+    b.aggregate("cols", 0x505fed17fe1b2c8eL).target(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cdaL).optional(true).ordered(true).multiple(true).origin("5791608333124971662").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTableRender() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguage", "TableRender", 0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x505fed17fdfd5494L);
+    b.class_(false, false, false);
+    b.parent(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98c95L);
+    b.origin("r:6c2c3770-ac97-4d60-a1d3-21d527b39f73(NewLanguage.structure)/5791608333123015828");
+    b.version(3);
+    b.property("fetchData", 0x505fed17fdfd5495L).type(PrimitiveTypeId.BOOLEAN).origin("5791608333123015829").done();
+    b.property("apiUrl", 0x505fed17fdfd5496L).type(PrimitiveTypeId.STRING).origin("5791608333123015830").done();
+    b.aggregate("columns", 0x505fed17fdfd5497L).target(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2b90a9c731294b0eL).optional(true).ordered(true).multiple(true).origin("5791608333123015831").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTextRender() {

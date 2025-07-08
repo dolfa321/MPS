@@ -19,7 +19,8 @@ public final class LanguageConceptSwitch {
   public static final int RInvetarDLS = 7;
   public static final int RShow = 8;
   public static final int RowRender = 9;
-  public static final int TextRender = 10;
+  public static final int TableRender = 10;
+  public static final int TextRender = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd25897b99aa4e01L, 0x981001ea0072c283L);
@@ -33,6 +34,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2c7d7d2448d98cddL, RInvetarDLS);
     builder.put(0x2c7d7d2448d98cd0L, RShow);
     builder.put(0x2b90a9c731294b0eL, RowRender);
+    builder.put(0x505fed17fdfd5494L, TableRender);
     builder.put(0x2c7d7d2448d98cdaL, TextRender);
     myIndex = builder.seal();
   }

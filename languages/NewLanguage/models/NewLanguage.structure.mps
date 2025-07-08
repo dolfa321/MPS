@@ -233,23 +233,18 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="2IgEssLakGf" role="1TKVEl">
       <property role="IQ2nx" value="3139195613265611535" />
-      <property role="TrG5h" value="clickable" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="2IgEssLakGx" role="1TKVEl">
-      <property role="IQ2nx" value="3139195613265611553" />
-      <property role="TrG5h" value="action" />
-      <ref role="AX2Wp" node="2IgEssLakGt" resolve="ActionType" />
+    <node concept="PrWs8" id="51vVhvY1krn" role="PzmwI">
+      <ref role="PrY4T" node="2LXvih8QoMl" resolve="IElementRender" />
     </node>
-    <node concept="1TJgyj" id="2IgEssLakGg" role="1TKVEi">
-      <property role="IQ2ns" value="3139195613265611536" />
+    <node concept="1TJgyj" id="51vVhvY6MMe" role="1TKVEi">
+      <property role="IQ2ns" value="5791608333124971662" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cols" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2LXvih8QoNq" resolve="TextRender" />
-    </node>
-    <node concept="PrWs8" id="5Qd3UBLc64J" role="PzmwI">
-      <ref role="PrY4T" node="2LXvih8QoMl" resolve="IElementRender" />
     </node>
   </node>
   <node concept="1TIwiD" id="2IgEssLakGi">
@@ -299,6 +294,31 @@
     <node concept="25R33" id="2IgEssLakGw" role="25R1y">
       <property role="3tVfz5" value="3139195613265611552" />
       <property role="TrG5h" value="api" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="51vVhvXZlik">
+    <property role="EcuMT" value="5791608333123015828" />
+    <property role="TrG5h" value="TableRender" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="51vVhvXZlil" role="1TKVEl">
+      <property role="IQ2nx" value="5791608333123015829" />
+      <property role="TrG5h" value="fetchData" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="51vVhvXZlim" role="1TKVEl">
+      <property role="IQ2nx" value="5791608333123015830" />
+      <property role="TrG5h" value="apiUrl" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="51vVhvXZlin" role="1TKVEi">
+      <property role="IQ2ns" value="5791608333123015831" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="columns" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2IgEssLakGe" resolve="RowRender" />
+    </node>
+    <node concept="PrWs8" id="51vVhvY069g" role="PzmwI">
+      <ref role="PrY4T" node="2LXvih8QoMl" resolve="IElementRender" />
     </node>
   </node>
 </model>

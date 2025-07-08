@@ -33,8 +33,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new RComponent_TextGen();
       case LanguageConceptSwitch.RInvetarDLS:
         return new RInvetarDLS_TextGen();
-      case LanguageConceptSwitch.RowRender:
-        return new RowRender_TextGen();
+      case LanguageConceptSwitch.TableRender:
+        return new TableRender_TextGen();
       case LanguageConceptSwitch.TextRender:
         return new TextRender_TextGen();
     }

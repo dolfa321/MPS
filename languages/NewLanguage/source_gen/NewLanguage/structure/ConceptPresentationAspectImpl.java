@@ -19,6 +19,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_RInvetarDLS;
   private ConceptPresentation props_RShow;
   private ConceptPresentation props_RowRender;
+  private ConceptPresentation props_TableRender;
   private ConceptPresentation props_TextRender;
 
   @Override
@@ -95,6 +96,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RowRender = cpb.create();
         }
         return props_RowRender;
+      case LanguageConceptSwitch.TableRender:
+        if (props_TableRender == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TableRender");
+          props_TableRender = cpb.create();
+        }
+        return props_TableRender;
       case LanguageConceptSwitch.TextRender:
         if (props_TextRender == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
