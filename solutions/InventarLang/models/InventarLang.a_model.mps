@@ -37,7 +37,6 @@
       </concept>
       <concept id="3205856104552172752" name="NewLanguage.structure.RShow" flags="ng" index="1$Df7O">
         <property id="3205856104552172756" name="text" index="1$Df7K" />
-        <property id="3205856104552172757" name="theme" index="1$Df7L" />
         <property id="3205856104552172759" name="padding" index="1$Df7N" />
         <property id="3205856104552172755" name="footer" index="1$Df7R" />
       </concept>
@@ -97,6 +96,10 @@
         <property role="1$Df7H" value="skladisce" />
         <property role="1$Df7I" value="skladisce" />
       </node>
+      <node concept="1$Df7G" id="2PZ$czg7X4r" role="1$Df7y">
+        <property role="1$Df7H" value="Domov" />
+        <property role="1$Df7I" value="gear/expired" />
+      </node>
     </node>
     <node concept="1$Df6J" id="5Qd3UBLboa_" role="1$Df7d">
       <ref role="1$Df6D" node="5Qd3UBLbBtX" resolve="Domov" />
@@ -104,7 +107,7 @@
         <property role="1$Df7S" value="Seznam vse opreme kateri poteče rok trajanje ozirom rok veljavnosti" />
       </node>
       <node concept="2HCFA3" id="51vVhvY0uLx" role="1$Df6C">
-        <property role="2HCFA1" value="http://localhost:3000/gear/expired" />
+        <property role="2HCFA1" value="gear/expired" />
         <property role="2HCFA2" value="true" />
         <node concept="qIub9" id="51vVhvY0uLz" role="2HCFA0">
           <property role="qIub8" value="imeOpreme" />
@@ -137,6 +140,12 @@
       <node concept="1$Df7Y" id="5Qd3UBLc_CR" role="1$Df6C">
         <property role="1$Df7S" value="Osebna oprema vseh članov" />
       </node>
+      <node concept="2HCFA3" id="2PZ$czgbfME" role="1$Df6C">
+        <property role="2HCFA1" value="nekaj nekaj" />
+        <node concept="qIub9" id="2PZ$czgbfMG" role="2HCFA0">
+          <property role="qIub8" value="test" />
+        </node>
+      </node>
       <node concept="qIubl" id="5Qd3UBLgby2" role="1$Df6C">
         <property role="qIubj" value="Dodaj člana" />
         <property role="2GCAfR" value="addČlan" />
@@ -164,7 +173,6 @@
     </node>
     <node concept="1$Df7O" id="5Qd3UBLhg3a" role="1$Df7c">
       <property role="1$Df7K" value="bold" />
-      <property role="1$Df7L" value="theme" />
       <property role="1$Df7N" value="big" />
       <property role="1$Df7R" value="true" />
     </node>

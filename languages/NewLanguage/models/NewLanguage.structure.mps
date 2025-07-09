@@ -144,7 +144,7 @@
     <node concept="1TJgyi" id="2LXvih8QoNl" role="1TKVEl">
       <property role="IQ2nx" value="3205856104552172757" />
       <property role="TrG5h" value="theme" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="2LXvih8QoNn" role="1TKVEl">
       <property role="IQ2nx" value="3205856104552172759" />

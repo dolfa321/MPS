@@ -67,6 +67,20 @@ const response = await axios.get('osebnaOprema');
     return (
       <div>
         <p>Osebna oprema vseh članov</p>
+<table>
+<thead>
+<tr>
+<th>test</th>
+</tr>
+</thead>
+<tbody>
+{data.map((row, index) => ( 
+<tr key={index}>
+<td>{row.test}</td>
+</tr>
+))}
+</tbody>
+</table>
         <button action='addČlan'>Dodaj člana</button>
             <footer
         style={{ position: "fixed",

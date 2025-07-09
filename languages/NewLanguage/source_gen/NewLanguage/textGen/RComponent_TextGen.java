@@ -13,9 +13,9 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class RComponent_TextGen extends TextGenDescriptorBase {
   @Override
@@ -40,7 +40,13 @@ public class RComponent_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     tgs.append("const fetchData = async () => {");
     tgs.newLine();
-    tgs.append("const response = await axios.get('https://localhost:3000/gear/expired'); \n setData(response.data) \n");
+    tgs.append("const response = await axios.get('");
+    for (SNode apiUrl : Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collectMany(SModelOperations.roots(SNodeOperations.getModel(ctx.getPrimaryInput()), CONCEPTS.RInvetarDLS$fY), LINKS.api$Tu3n), LINKS.endPointList$T71q))) {
+      if (SPropertyOperations.getString(apiUrl, PROPS.name$T7Kp) == SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL)) {
+        tgs.append(SPropertyOperations.getString(apiUrl, PROPS.url$T7Zq));
+      }
+    }
+    tgs.append("'); \n setData(response.data) \n");
     tgs.append("}; \n fetchData();");
 
     ctx.getBuffer().area().decreaseIndent();
@@ -54,8 +60,15 @@ public class RComponent_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<div>");
-    tgs.newLine();
+    for (SNode theme : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.roots(SNodeOperations.getModel(ctx.getPrimaryInput()), CONCEPTS.RInvetarDLS$fY), LINKS.show$Tuio))) {
+      if (SPropertyOperations.getBoolean(theme, PROPS.theme$TfHX)) {
+        tgs.append("<div style={{ backgroundColor: '#121212', color: '#E0E0E0' }}>");
+        tgs.newLine();
+      } else {
+        tgs.append("<div>");
+        tgs.newLine();
+      }
+    }
     ctx.getBuffer().area().increaseIndent();
     for (SNode render : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.roots(SNodeOperations.getModel(ctx.getPrimaryInput()), CONCEPTS.RInvetarDLS$fY), LINKS.renders$Tuxp))) {
       if (SPropertyOperations.getString(SLinkOperations.getTarget(render, LINKS.cName$PX2q), PROPS.name$MnvL) == SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL)) {
@@ -97,16 +110,21 @@ public class RComponent_TextGen extends TextGenDescriptorBase {
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty name$T7Kp = MetaAdapterFactory.getProperty(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cc8L, 0x2c7d7d2448d98cc9L, "name");
+    /*package*/ static final SProperty url$T7Zq = MetaAdapterFactory.getProperty(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cc8L, 0x2c7d7d2448d98ccaL, "url");
+    /*package*/ static final SProperty theme$TfHX = MetaAdapterFactory.getProperty(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cd0L, 0x2c7d7d2448d98cd5L, "theme");
     /*package*/ static final SProperty footer$TffV = MetaAdapterFactory.getProperty(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cd0L, 0x2c7d7d2448d98cd3L, "footer");
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SReferenceLink cName$PX2q = MetaAdapterFactory.getReferenceLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98c8bL, 0x2c7d7d2448d98c8dL, "cName");
-    /*package*/ static final SContainmentLink renders$Tuxp = MetaAdapterFactory.getContainmentLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cddL, 0x2c7d7d2448d98ce9L, "renders");
-    /*package*/ static final SContainmentLink show$Tuio = MetaAdapterFactory.getContainmentLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cddL, 0x2c7d7d2448d98ce8L, "show");
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept RInvetarDLS$fY = MetaAdapterFactory.getConcept(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cddL, "NewLanguage.structure.RInvetarDLS");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink api$Tu3n = MetaAdapterFactory.getContainmentLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cddL, 0x2c7d7d2448d98ce7L, "api");
+    /*package*/ static final SContainmentLink endPointList$T71q = MetaAdapterFactory.getContainmentLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cc4L, 0x2c7d7d2448d98cc6L, "endPointList");
+    /*package*/ static final SContainmentLink show$Tuio = MetaAdapterFactory.getContainmentLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cddL, 0x2c7d7d2448d98ce8L, "show");
+    /*package*/ static final SReferenceLink cName$PX2q = MetaAdapterFactory.getReferenceLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98c8bL, 0x2c7d7d2448d98c8dL, "cName");
+    /*package*/ static final SContainmentLink renders$Tuxp = MetaAdapterFactory.getContainmentLink(0xd25897b99aa4e01L, 0x981001ea0072c283L, 0x2c7d7d2448d98cddL, 0x2c7d7d2448d98ce9L, "renders");
   }
 }

@@ -384,8 +384,8 @@
       <node id="3205856104552172754" at="174,114,175,113" concept="1" />
       <node id="3205856104552172755" at="175,113,176,113" concept="1" />
       <node id="3205856104552172756" at="176,113,177,110" concept="1" />
-      <node id="3205856104552172757" at="177,110,178,111" concept="1" />
-      <node id="3205856104552172759" at="178,111,179,113" concept="1" />
+      <node id="3205856104552172757" at="177,110,178,112" concept="1" />
+      <node id="3205856104552172759" at="178,112,179,113" concept="1" />
       <node id="3205856104552172760" at="179,113,180,121" concept="1" />
       <node id="3205856104552172752" at="180,121,181,22" concept="6" />
       <node id="3205856104552172752" at="169,0,183,0" concept="8" trace="createDescriptorForRShow#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />

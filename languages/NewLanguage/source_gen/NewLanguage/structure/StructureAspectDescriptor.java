@@ -175,7 +175,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("header", 0x2c7d7d2448d98cd2L).type(PrimitiveTypeId.BOOLEAN).origin("3205856104552172754").done();
     b.property("footer", 0x2c7d7d2448d98cd3L).type(PrimitiveTypeId.BOOLEAN).origin("3205856104552172755").done();
     b.property("text", 0x2c7d7d2448d98cd4L).type(PrimitiveTypeId.STRING).origin("3205856104552172756").done();
-    b.property("theme", 0x2c7d7d2448d98cd5L).type(PrimitiveTypeId.STRING).origin("3205856104552172757").done();
+    b.property("theme", 0x2c7d7d2448d98cd5L).type(PrimitiveTypeId.BOOLEAN).origin("3205856104552172757").done();
     b.property("padding", 0x2c7d7d2448d98cd7L).type(PrimitiveTypeId.STRING).origin("3205856104552172759").done();
     b.property("showActiveItem", 0x2c7d7d2448d98cd8L).type(PrimitiveTypeId.BOOLEAN).origin("3205856104552172760").done();
     return b.create();
