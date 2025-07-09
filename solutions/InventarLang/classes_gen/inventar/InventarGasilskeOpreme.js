@@ -6,7 +6,7 @@ const [data, setData] = useState([]);
 
 useEffect(() => { 
 const fetchData = async () => {
-const response = await axios.get('/gear/expired'); 
+const response = await axios.get('gear/expired'); 
  setData(response.data) 
 }; 
  fetchData();}, []);
@@ -17,11 +17,19 @@ const response = await axios.get('/gear/expired');
 <table>
 <thead>
 <tr>
+<th>imeOpreme</th>
+<th>datumNakupa</th>
+<th>veljavnost</th>
+<th>pregledano</th>
 </tr>
 </thead>
 <tbody>
 {data.map((row, index) => ( 
 <tr key={index}>
+<td>{row.imeOpreme}</td>
+<td>{row.datumNakupa}</td>
+<td>{row.veljavnost}</td>
+<td>{row.pregledano}</td>
 </tr>
 ))}
 </tbody>
@@ -51,7 +59,7 @@ const [data, setData] = useState([]);
 
 useEffect(() => { 
 const fetchData = async () => {
-const response = await axios.get('/gear/expired'); 
+const response = await axios.get('osebnaOprema'); 
  setData(response.data) 
 }; 
  fetchData();}, []);
@@ -59,6 +67,20 @@ const response = await axios.get('/gear/expired');
     return (
       <div>
         <p>Osebna oprema vseh članov</p>
+<table>
+<thead>
+<tr>
+<th>test</th>
+</tr>
+</thead>
+<tbody>
+{data.map((row, index) => ( 
+<tr key={index}>
+<td>{row.test}</td>
+</tr>
+))}
+</tbody>
+</table>
         <button action='addČlan'>Dodaj člana</button>
             <footer
         style={{ position: "fixed",
@@ -85,7 +107,7 @@ const [data, setData] = useState([]);
 
 useEffect(() => { 
 const fetchData = async () => {
-const response = await axios.get('/gear/expired'); 
+const response = await axios.get(''); 
  setData(response.data) 
 }; 
  fetchData();}, []);
@@ -119,7 +141,7 @@ const [data, setData] = useState([]);
 
 useEffect(() => { 
 const fetchData = async () => {
-const response = await axios.get('/gear/expired'); 
+const response = await axios.get('skladisce'); 
  setData(response.data) 
 }; 
  fetchData();}, []);

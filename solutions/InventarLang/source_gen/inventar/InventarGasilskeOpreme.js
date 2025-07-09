@@ -12,7 +12,7 @@ const response = await axios.get('gear/expired');
  fetchData();}, []);
 
     return (
-      <div>
+      <div style={{ backgroundColor: '#121212', color: '#E0E0E0' }}>
         <p>Seznam vse opreme kateri poteče rok trajanje ozirom rok veljavnosti</p>
 <table>
 <thead>
@@ -34,75 +34,92 @@ const response = await axios.get('gear/expired');
 ))}
 </tbody>
 </table>
-            <footer
-        style={{ position: "fixed",
- bottom: 0, 
- left: "50%", 
- transform: "translateX(-50%)" 
-, backgroundColor: "#333", 
- color: "white", 
- textAlign: "center", 
- padding: "10px", 
- width: "100%", 
- }} 
- > 
-2025, Moj inventar. Vse pravice pridzane
-</footer>    </div>
+          </div>
     );
 };
 export default Domov;
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
-function osebnaOprema() {
+function Osebnaoprema() {
 const [data, setData] = useState([]);
 
 useEffect(() => { 
 const fetchData = async () => {
-const response = await axios.get('osebnaOprema'); 
+const response = await axios.get('personal-gear'); 
  setData(response.data) 
 }; 
  fetchData();}, []);
 
     return (
-      <div>
+      <div style={{ backgroundColor: '#121212', color: '#E0E0E0' }}>
         <p>Osebna oprema vseh članov</p>
 <table>
 <thead>
 <tr>
-<th>test</th>
+<th>lastnik</th>
 </tr>
 </thead>
 <tbody>
 {data.map((row, index) => ( 
 <tr key={index}>
-<td>{row.test}</td>
+<td>{row.lastnik}</td>
 </tr>
 ))}
 </tbody>
 </table>
         <button action='addČlan'>Dodaj člana</button>
-            <footer
-        style={{ position: "fixed",
- bottom: 0, 
- left: "50%", 
- transform: "translateX(-50%)" 
-, backgroundColor: "#333", 
- color: "white", 
- textAlign: "center", 
- padding: "10px", 
- width: "100%", 
- }} 
- > 
-2025, Moj inventar. Vse pravice pridzane
-</footer>    </div>
+          </div>
     );
 };
-export default osebnaOprema;
+export default Osebnaoprema;
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
-function opremaVVozileh() {
+function Opremavvozileh() {
+const [data, setData] = useState([]);
+
+useEffect(() => { 
+const fetchData = async () => {
+const response = await axios.get('vehicles'); 
+ setData(response.data) 
+}; 
+ fetchData();}, []);
+
+    return (
+      <div style={{ backgroundColor: '#121212', color: '#E0E0E0' }}>
+        <p>Oprema v vseh vozileh</p>
+<table>
+<thead>
+<tr>
+<th>znamka</th>
+<th>tipizacija</th>
+<th>letoNadgradnje</th>
+<th>zadnjiServis</th>
+<th>tehnicni</th>
+</tr>
+</thead>
+<tbody>
+{data.map((row, index) => ( 
+<tr key={index}>
+<td>{row.znamka}</td>
+<td>{row.tipizacija}</td>
+<td>{row.letoNadgradnje}</td>
+<td>{row.zadnjiServis}</td>
+<td>{row.tehnicni}</td>
+</tr>
+))}
+</tbody>
+</table>
+        <button action='AddVozilo'>Dodaj Vozilo</button>
+          </div>
+    );
+};
+export default Opremavvozileh;
+import React, {useEffect, useState} from 'react';
+import axios from 'axios';
+
+function Skladisce() {
 const [data, setData] = useState([]);
 
 useEffect(() => { 
@@ -113,57 +130,8 @@ const response = await axios.get('');
  fetchData();}, []);
 
     return (
-      <div>
-        <p>Oprema v vseh vozileh</p>
-        <button action='AddVozilo'>Dodaj Vozilo</button>
-            <footer
-        style={{ position: "fixed",
- bottom: 0, 
- left: "50%", 
- transform: "translateX(-50%)" 
-, backgroundColor: "#333", 
- color: "white", 
- textAlign: "center", 
- padding: "10px", 
- width: "100%", 
- }} 
- > 
-2025, Moj inventar. Vse pravice pridzane
-</footer>    </div>
+      <div style={{ backgroundColor: '#121212', color: '#E0E0E0' }}>
+          </div>
     );
 };
-export default opremaVVozileh;
-import React, {useEffect, useState} from 'react';
-import axios from 'axios';
-
-function skladisce() {
-const [data, setData] = useState([]);
-
-useEffect(() => { 
-const fetchData = async () => {
-const response = await axios.get('skladisce'); 
- setData(response.data) 
-}; 
- fetchData();}, []);
-
-    return (
-      <div>
-        <p>Ostala oprema v shrambi</p>
-        <button action='AddOprema'>Dodaj opremo</button>
-            <footer
-        style={{ position: "fixed",
- bottom: 0, 
- left: "50%", 
- transform: "translateX(-50%)" 
-, backgroundColor: "#333", 
- color: "white", 
- textAlign: "center", 
- padding: "10px", 
- width: "100%", 
- }} 
- > 
-2025, Moj inventar. Vse pravice pridzane
-</footer>    </div>
-    );
-};
-export default skladisce;
+export default Skladisce;
